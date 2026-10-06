@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator & Checker</h1>
+
+    <div class="section">
+      <label>Password Length: <span id="lengthValue">12</span></label>
+      <input type="range" id="lengthSlider" min="6" max="32" value="12">
+      <button id="generateBtn">Generate Password</button>
+      <div id="generatedPassword" class="output">Click generate...</div>
+    </div>
+
+    <div class="section">
+      <label>Check Your Password Strength:</label>
+      <input type="text" id="checkInput" placeholder="Type your password here...">
+      <div id="strengthBar" class="strength-bar"></div>
+      <div id="strengthText" class="strength-text">—</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
